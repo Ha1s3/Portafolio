@@ -1,17 +1,36 @@
-<section>
-    <article class="contact">
-        <div class="container">
-          <h2>Contacto</h2>
-          <p>¡Me encantaría saber de ti! Puedes ponerte en contacto conmigo a través de los siguientes medios:</p>
-      
-          <ul class="contact-list">
-            <li>Email: <a href="mailto:tucorreo@example.com">tucorreo@example.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">Tu Usuario</a></li>
-            <li>Twitter: <a href="https://twitter.com/tuusuario" target="_blank" rel="noopener noreferrer">@TuUsuario</a></li>
-            <!-- Agrega más detalles de contacto según sea necesario -->
-          </ul>
-      
-          <p>Espero con interés escuchar de ti y trabajar juntos en futuros proyectos.</p>
-        </div>
-      </article>
+<section id="contacto" class="bg-gray-300 py-16">
+  <article class="container mx-auto">
+      <h2 class="text-4xl font-serif font-bold text-gray-800 mb-8 text-center">Contacto</h2>
+
+      <div class="flex flex-col items-center">
+          <p class="text-lg text-center mb-6">
+              ¡Me encantaría saber de ti! Utiliza el formulario a continuación para enviarme un correo.
+          </p>
+
+          <form action="#" method="POST" class="w-full max-w-md">
+              <div class="mb-4">
+                  <label for="nombre" class="block text-sm font-semibold text-gray-600">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+              </div>
+
+              <div class="mb-4">
+                  <label for="correo" class="block text-sm font-semibold text-gray-600">Correo Electrónico:</label>
+                  <input type="email" id="correo" name="correo" placeholder="tucorreo@example.com" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+              </div>
+
+              <div class="mb-4">
+                  <label for="mensaje" class="block text-sm font-semibold text-gray-600">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
+                  Enviar Mensaje
+              </button>
+          </form>
+
+          <p class="text-lg text-center mt-6">
+              Espero con interés recibir tu mensaje y trabajar juntos en futuros proyectos.
+          </p>
+      </div>
+  </article>
 </section>
